@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .main-title::before,
+    .main-title::after {
+        content: "";
+        position: absolute;
+        width: 6.58px;
+        height: 6.58px;
+        background-color: #FE5F5F;
+        top: 55%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .main-title::before {
+        left: -24px;
+    }
+
+    .main-title::after {
+        right: -24px;
+    }
+    .main-btn {
+        position: relative;
+    }
+    .main-btn:after {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 9px;
+        background-image: url('../img/arrow.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        top: 52%;
+        right: 23px;
+        transform: translateY(-50%);
+    }
+}
